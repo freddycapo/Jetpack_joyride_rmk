@@ -19,7 +19,6 @@ class Player():
             self.y-=self.propulsion
 
     def show(self,win):
-        pygame.draw.rect(win,(255,255,255),(self.x,self.y,self.w,self.h))
+        pygame.draw.rect(win,(255,0,0),(self.x,self.y,self.w,self.h))
         pygame.display.update()
-        win.fill((0,0,0))
                 
