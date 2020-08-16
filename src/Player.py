@@ -10,6 +10,7 @@ class Player():
         self.h=h
         self.propulsion=10
         self.gravity=8
+        self.image=pygame.image.load("src\images\Player.png")
 
     def move(self,Sh):
         keys=pygame.key.get_pressed()
@@ -19,6 +20,6 @@ class Player():
             self.y-=self.propulsion
 
     def show(self,win):
-        pygame.draw.rect(win,(255,0,0),(self.x,self.y,self.w,self.h))
+        win.blit(pygame.transform.scale(self.image,(self.w,self.h)),(self.x,self.y))
         pygame.display.update()
                 
