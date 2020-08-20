@@ -27,5 +27,3 @@ class Player():
 
     def show(self,win):
         win.blit(pygame.transform.scale(self.image,(self.w,self.h)),(self.x,self.y))
-        
-                
