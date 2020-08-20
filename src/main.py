@@ -44,10 +44,10 @@ while run:
     p.move(heigth)
 
     for coin in coins:
-        coin.move()
+        coin.move(300)
 
     for rocket in rockets:
-        rocket.move()
+        rocket.move(1000)
 
     UpdateScreen()
 
