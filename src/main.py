@@ -16,7 +16,7 @@ bg = pygame.image.load("src/images/background.png")
 p=Player(100,300,80,80)
 
 n_coins=5
-n_rockets=5
+n_rockets=3
 coins=[]
 rockets=[]
 
